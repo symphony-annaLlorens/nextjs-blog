@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This is a demo project build with Next.js on the frontend and Nest.js on the backend.
