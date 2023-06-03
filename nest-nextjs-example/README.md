@@ -18,9 +18,11 @@ Open new terminal
 
 ```bash
 # start next.js web app
-$ yarn next dev
+% yarn start:next
 ```
-## Server  
+
+## Server
+
 ```bash
 # development
 $ yarn run start
