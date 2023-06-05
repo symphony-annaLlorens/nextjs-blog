@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "./layout.module.css";
+import Styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className={styles.container}>
+    <div className={Styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -31,7 +31,7 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={Styles.header}>
         {home ? (
           <>
             <Image
@@ -66,7 +66,7 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className={Styles.backToHome}>
           <Link href="/">← Back to home</Link>
         </div>
       )}
